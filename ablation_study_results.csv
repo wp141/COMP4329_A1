@@ -1,0 +1,26 @@
+Experiment,Option,Test Accuracy,Final Training Loss,Average F1 Score,Training Time (s)
+Learning Rate,0.001,Error,Error,Error,Error
+Learning Rate,0.005,Error,Error,Error,Error
+Learning Rate,0.01,Error,Error,Error,Error
+Batch Size,50,Error,Error,Error,Error
+Batch Size,100,Error,Error,Error,Error
+Batch Size,1000,Error,Error,Error,Error
+Momentum Optimisation,None,Error,Error,Error,Error
+Momentum Optimisation,0.5,Error,Error,Error,Error
+Momentum Optimisation,0.9,Error,Error,Error,Error
+Weight Decay,0.9,Error,Error,Error,Error
+Weight Decay,0.98,Error,Error,Error,Error
+Weight Decay,None,Error,Error,Error,Error
+Dropout Probability,1.0,Error,Error,Error,Error
+Dropout Probability,0.5,Error,Error,Error,Error
+Dropout Probability,0.8,Error,Error,Error,Error
+Number of Neurons,50,Error,Error,Error,Error
+Number of Neurons,100,Error,Error,Error,Error
+Number of Neurons,150,Error,Error,Error,Error
+Activation Function,relu,Error,Error,Error,Error
+Hidden Layers,1,Error,Error,Error,Error
+Hidden Layers,3,Error,Error,Error,Error
+Hidden Layers,5,Error,Error,Error,Error
+Preprocessing,standardize,Error,Error,Error,Error
+Preprocessing,normalize,Error,Error,Error,Error
+Preprocessing,none,Error,Error,Error,Error

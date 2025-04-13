@@ -1,0 +1,198 @@
+Ablation Study Results - Generated on: 2025-04-12 11:28:46
+================================================================================
+Baseline Configuration:
+  Num Hidden Layers: 3
+  Neurons Per Layer: 100
+  Hidden Activation: relu
+  SGD Optim: None
+  Weight Decay: 0.98
+  Initialisation: xavier
+  Batch Size: 100
+  Dropout Prob: 0.5
+  Learning Rate: 0.005
+  Epochs: 3
+================================================================================
+
+--- Phase 1: Neurons Per Layer ---
+
+Config Key: neurons_100_100_100
+  Status: Success
+  Time Taken (s): 6.50
+  Test Accuracy: 0.3378
+  Average F1 Score: 0.3250
+  Final Train Loss: 1.8119
+----------------------------------------
+Config Key: neurons_150_150_150
+  Status: Success
+  Time Taken (s): 8.67
+  Test Accuracy: 0.3601
+  Average F1 Score: 0.3514
+  Final Train Loss: 1.7564
+----------------------------------------
+Config Key: neurons_50_50_50
+  Status: Success
+  Time Taken (s): 4.74
+  Test Accuracy: 0.2865
+  Average F1 Score: 0.2666
+  Final Train Loss: 1.9069
+----------------------------------------
+
+--- Phase 2: Activation Function ---
+
+Config Key: activation_gelu
+  Status: Success
+  Time Taken (s): 9.77
+  Test Accuracy: 0.1000
+  Average F1 Score: 0.1818
+  Final Train Loss: 0.0000
+----------------------------------------
+Config Key: activation_leakyrelu
+  Status: Success
+  Time Taken (s): 7.39
+  Test Accuracy: 0.3480
+  Average F1 Score: 0.3347
+  Final Train Loss: 1.8107
+----------------------------------------
+Config Key: activation_relu
+  Status: Success
+  Time Taken (s): 6.46
+  Test Accuracy: 0.3367
+  Average F1 Score: 0.3192
+  Final Train Loss: 1.8104
+----------------------------------------
+
+--- Phase 3: Number of Hidden Layers ---
+
+Config Key: num_hidden_1
+  Status: Success
+  Time Taken (s): 3.37
+  Test Accuracy: 0.3889
+  Average F1 Score: 0.3803
+  Final Train Loss: 1.6904
+----------------------------------------
+Config Key: num_hidden_3
+  Status: Success
+  Time Taken (s): 6.49
+  Test Accuracy: 0.3434
+  Average F1 Score: 0.3314
+  Final Train Loss: 1.8053
+----------------------------------------
+Config Key: num_hidden_5
+  Status: Success
+  Time Taken (s): 9.58
+  Test Accuracy: 0.2387
+  Average F1 Score: 0.2058
+  Final Train Loss: 1.9570
+----------------------------------------
+
+--- Phase 4: SGD Optimization ---
+
+Config Key: sgd_optim_0.0
+  Status: ERROR
+  Error Msg: 'float' object is not subscriptable
+----------------------------------------
+Config Key: sgd_optim_0.5
+  Status: ERROR
+  Error Msg: 'float' object is not subscriptable
+----------------------------------------
+Config Key: sgd_optim_None
+  Status: Success
+  Time Taken (s): 6.43
+  Test Accuracy: 0.3451
+  Average F1 Score: 0.3288
+  Final Train Loss: 1.8121
+----------------------------------------
+
+--- Phase 5: Weight Decay ---
+
+Config Key: weight_decay_0.9
+  Status: Success
+  Time Taken (s): 6.48
+  Test Accuracy: 0.3377
+  Average F1 Score: 0.3204
+  Final Train Loss: 1.6593
+----------------------------------------
+Config Key: weight_decay_0.98
+  Status: Success
+  Time Taken (s): 6.48
+  Test Accuracy: 0.3299
+  Average F1 Score: 0.3125
+  Final Train Loss: 1.8114
+----------------------------------------
+Config Key: weight_decay_None
+  Status: ERROR
+  Error Msg: unsupported operand type(s) for *: 'float' and 'NoneType'
+----------------------------------------
+
+--- Phase 6: Batch Size ---
+
+Config Key: batch_size_100
+  Status: Success
+  Time Taken (s): 6.47
+  Test Accuracy: 0.3414
+  Average F1 Score: 0.3306
+  Final Train Loss: 1.8081
+----------------------------------------
+Config Key: batch_size_1000
+  Status: Success
+  Time Taken (s): 6.43
+  Test Accuracy: 0.3304
+  Average F1 Score: 0.3127
+  Final Train Loss: 1.8508
+----------------------------------------
+Config Key: batch_size_50
+  Status: Success
+  Time Taken (s): 6.71
+  Test Accuracy: 0.3422
+  Average F1 Score: 0.3288
+  Final Train Loss: 1.8047
+----------------------------------------
+
+--- Phase 7: Dropout Probability ---
+
+Config Key: dropout_prob_0.1
+  Status: Success
+  Time Taken (s): 5.60
+  Test Accuracy: 0.4301
+  Average F1 Score: 0.4110
+  Final Train Loss: 1.5388
+----------------------------------------
+Config Key: dropout_prob_0.5
+  Status: Success
+  Time Taken (s): 6.51
+  Test Accuracy: 0.3321
+  Average F1 Score: 0.3216
+  Final Train Loss: 1.8165
+----------------------------------------
+Config Key: dropout_prob_0.9
+  Status: Success
+  Time Taken (s): 5.47
+  Test Accuracy: 0.1071
+  Average F1 Score: 0.1052
+  Final Train Loss: 2.2560
+----------------------------------------
+
+--- Phase 8: Learning Rate ---
+
+Config Key: learning_rate_0.001
+  Status: Success
+  Time Taken (s): 6.51
+  Test Accuracy: 0.2858
+  Average F1 Score: 0.2756
+  Final Train Loss: 1.9400
+----------------------------------------
+Config Key: learning_rate_0.005
+  Status: Success
+  Time Taken (s): 6.56
+  Test Accuracy: 0.3393
+  Average F1 Score: 0.3297
+  Final Train Loss: 1.8112
+----------------------------------------
+Config Key: learning_rate_0.01
+  Status: Success
+  Time Taken (s): 6.48
+  Test Accuracy: 0.3367
+  Average F1 Score: 0.3268
+  Final Train Loss: 1.8253
+----------------------------------------
+
